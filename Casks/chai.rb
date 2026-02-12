@@ -10,4 +10,9 @@ cask "chai" do
   depends_on macos: ">= :big_sur"
 
   app "Chai.app"
+
+  zap trash: [
+    "~/Library/Application Scripts/me.villani.lorenzo.Chai",
+    "~/Library/Containers/me.villani.lorenzo.Chai",
+  ]
 end
